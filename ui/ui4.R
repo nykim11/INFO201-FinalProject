@@ -1,6 +1,6 @@
 ui4 <- fluidPage(
   
-  titlePanel("How does maximum wind speed affect the track of storms?"), 
+  titlePanel("Maximum Wind Speed and the Direction of Storm Travel"), 
   plotOutput("bar_graph"),
   
   sidebarLayout(

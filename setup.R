@@ -59,13 +59,13 @@ world <- map_data('world2')
 
 # Anushree - Formatted the data needed to make graphs
 atlantic.data <- atlantic.df %>% 
-  filter(Low.Wind.NE != -999 & Name != 'UNNAMED') %>% 
+  #filter(Low.Wind.NE != -999) %>% 
   mutate(Proper.Date = as.Date(as.character(Date), "%Y%m%d")) 
 pacific.data <- pacific.df %>% 
-  filter(Low.Wind.NE != -999 & Name != 'UNNAMED') %>% 
+  #filter(Low.Wind.NE != -999) %>% 
   mutate(Proper.Date = as.Date(as.character(Date), "%Y%m%d")) 
 both.data <- both.df %>% 
-  filter(Low.Wind.NE != -999 & Name != 'UNNAMED') %>% 
+  #filter(Low.Wind.NE != -999) %>% 
   mutate(Proper.Date = as.Date(as.character(Date), "%Y%m%d"))
 
 # Anushree - Data frame for Status key

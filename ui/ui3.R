@@ -37,6 +37,7 @@ ui3 <- fluidPage(
           p('In the Atlantic dataset, the maximum winds reached by a storm is 160 mph by Wilma and the lowest winds 
             reached at 10 mph. In the Pacific dataset, the maximum winds are reached by storm Patricia at 185 mph. 
             The lowest are reached by Elevent at 15 mph.')
+          
         ),
         tabPanel(
           'Storm Intensity',

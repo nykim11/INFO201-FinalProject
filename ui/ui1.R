@@ -40,17 +40,13 @@ ui1 <- fluidPage(
       
       titlePanel("Hurricanes on the Map"),
       
-      p(HTML(paste0("<h4>", "This map is showing hurricanes in the north america,
-                    which is classified into pacific hurricanes and atlantic 
-                    hurricanes. ", "<b>", "Each color", "</b>", " means the ",
-                    "<b>", "same hurricane", "</b>", " with different time. The ",
-                    "<b>", "size of dots", "</b>", " is propotional to ",
-                    "<b>", "wind speed", "</b>", " of corresponding hurricanes. 
-                    You can ", "<b>", "zoom in by dragging desired part to zoom 
-                    in and doubleclicking", "</b>", " and just ", "<b>", "doubleclick 
-                    anywhere to reset zooming", "</b>", ". Also, you can ", "<b>",
-                    "get more information about that hurrican by hovering",
-                    "</b>", "  your mouse pointer above the hurricane.", "</h4>"))),
+      p(HTML(paste0("<h4> This map shows hurricanes in North America, 
+                    classified by region (Pacific and Atlantic). Each hurricane 
+                    is differentiated by color. The size of each dot is 
+                    propotional to wind speed. You can zoom in by diagonally 
+                    dragging over the desired part and double-clicking it. 
+                    Doubleclick again anywhere to reset the zoom. Also, you can 
+                    hover over individual dots for specific details. </h4>"))),
       
       div(
         style = "position:relative",
@@ -63,15 +59,11 @@ ui1 <- fluidPage(
         uiOutput("hover_info1")
       ),
       
-      p(HTML(paste0("<h3>", "Analysis", "</h3>"))),
-      
-      p(HTML(paste0("<h4>", "One of our question is ", "<b>", 
-                    "'Where is hurricane-affected area in the north america?'",
-                    "</b>", ". We plot the hurricanes locations in the map so that
-                    we can see which areas are affected. We can filter hurricanes:
-                    ", "<b>", "(i) by years and months to check how affected areas are changed as
-                    time passes", "</b>", ". ", "<b>", "(ii) by categories to check which ares have more
-                    stronger or weaker hurricanes", "</b>", ".", "</h4>"))) 
+      p(HTML(paste0("<h4> The map above allows the visualizing of which areas 
+                    storms most often travel over. Storms can be filtered by year 
+                    and month to check traveled regions during certain periods of 
+                    time. In addition, they can also be filtered by category of 
+                    intensity. </h4>")))
       
       )
     )
